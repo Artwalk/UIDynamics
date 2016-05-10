@@ -16,4 +16,18 @@ class CRView: UIView {
             layer.masksToBounds = true
         }
     }
+    
+    @IBInspectable var borderWidth: CGFloat = 0 {
+        didSet {
+            layer.borderWidth = borderWidth
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor = UIColor.clearColor() {
+        didSet {
+             layer.borderColor = borderColor.CGColor
+        }
+    }
+    
+    
 }

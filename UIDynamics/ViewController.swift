@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     // 3
     var collision: UICollisionBehavior!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

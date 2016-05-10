@@ -15,7 +15,6 @@ class SnapViewController: UIViewController {
     var snap: UISnapBehavior!
     var animator: UIDynamicAnimator!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

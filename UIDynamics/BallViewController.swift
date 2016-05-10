@@ -62,11 +62,7 @@ class BallViewController: UIViewController {
     func setupBehaviors() {
         animator?.removeAllBehaviors()
         
-        let bolts = [
-            CGPoint(x: hoopPosition.x + 25, y: hoopPosition.y + 85),
-            CGPoint(x: hoopPosition.x + 75, y: hoopPosition.y + 85),
-            CGPoint(x: hoopPosition.x + 25, y: hoopPosition.y + 85),
-            CGPoint(x: hoopPosition.x + 75, y: hoopPosition.y + 85)]
+        let bolts = [leftHoop.center, rightHoop.center, leftHoop.center, rightHoop.center]
         
         // Attach
         zip([hoop, hoop, leftHoop, rightHoop], bolts).forEach({

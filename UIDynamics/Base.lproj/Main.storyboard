@@ -256,7 +256,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBB-cd-Zhe" customClass="CRView" customModule="UIDynamics" customModuleProvider="target">
-                                <rect key="frame" x="182" y="328" width="10" height="10"/>
+                                <rect key="frame" x="182" y="329" width="10" height="10"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nBB-cd-Zhe" secondAttribute="height" multiplier="1:1" id="7RP-bD-sEr"/>
@@ -268,25 +268,32 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XzU-kE-gxF" customClass="CRView" customModule="UIDynamics" customModuleProvider="target">
-                                <rect key="frame" x="20" y="209" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cheers" translatesAutoresizingMaskIntoConstraints="NO" id="Wfw-uv-FUp">
+                                <rect key="frame" x="0.0" y="312" width="44" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="XzU-kE-gxF" secondAttribute="height" multiplier="1:1" id="jSC-Qo-ZXo"/>
-                                    <constraint firstAttribute="width" constant="60" id="lzh-B3-6eK"/>
+                                    <constraint firstAttribute="height" constant="44" id="w8j-bc-6Je"/>
+                                    <constraint firstAttribute="width" constant="44" id="xxA-D1-LPL"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
-                                        <real key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="meican" translatesAutoresizingMaskIntoConstraints="NO" id="pzg-dn-7Dh">
+                                <rect key="frame" x="52" y="312" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ezr-5X-U6r"/>
+                                    <constraint firstAttribute="width" constant="44" id="jrw-Zf-OXh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="oyster" translatesAutoresizingMaskIntoConstraints="NO" id="ntM-NP-XGd">
+                                <rect key="frame" x="104" y="312" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="3G9-Yq-Zsp"/>
+                                    <constraint firstAttribute="height" constant="44" id="wjD-BM-gm7"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="nBB-cd-Zhe" firstAttribute="centerY" secondItem="uYF-4S-8wE" secondAttribute="centerY" id="6IM-Jy-gNB"/>
-                            <constraint firstItem="XzU-kE-gxF" firstAttribute="width" secondItem="XzU-kE-gxF" secondAttribute="height" multiplier="1:1" id="XX9-fe-WUT"/>
                             <constraint firstItem="nBB-cd-Zhe" firstAttribute="centerX" secondItem="uYF-4S-8wE" secondAttribute="centerX" id="p0W-QA-Rml"/>
                         </constraints>
                         <connections>
@@ -295,7 +302,9 @@
                     </view>
                     <connections>
                         <outlet property="anchorView" destination="nBB-cd-Zhe" id="EeB-29-Xcw"/>
-                        <outlet property="squareView" destination="XzU-kE-gxF" id="VMx-1J-7BZ"/>
+                        <outlet property="cheers" destination="Wfw-uv-FUp" id="tzx-FH-kD5"/>
+                        <outlet property="meican" destination="pzg-dn-7Dh" id="Fw0-Na-SSv"/>
+                        <outlet property="oyster" destination="ntM-NP-XGd" id="i6b-Pr-z4B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFH-Gf-oLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -503,5 +512,8 @@
     <resources>
         <image name="Doge" width="268" height="264"/>
         <image name="bg" width="375" height="667"/>
+        <image name="cheers" width="57" height="57"/>
+        <image name="meican" width="39" height="39"/>
+        <image name="oyster" width="38" height="39"/>
     </resources>
 </document>
